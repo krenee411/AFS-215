@@ -18,10 +18,10 @@
 
 
 def kata1():
-    userInput = input("Please choose ONE of the following number [1,2,3,5,6,10,15]: ")
+    userInput = input("Please choose ONE of the following numbers [1,2,3,5,6,10,15]: ")
     makeNum = int(userInput)
     if makeNum == 1:
-            return 1
+        return 1
     elif makeNum == 2:
         return 2
     elif makeNum % 3 == 0 and not makeNum % 5 == 0:
