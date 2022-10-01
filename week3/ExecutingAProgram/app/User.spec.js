@@ -7,7 +7,7 @@ describe('Get Greeting', () => {
         num1 = null
         num2 = null
     info =user.getUserInfo()
-    return("Hello" + info)
+    console.log("Hello" + info)
     })
 
 })

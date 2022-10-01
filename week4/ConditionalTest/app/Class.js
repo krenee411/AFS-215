@@ -1,5 +1,3 @@
-const { assert } = require("chai");
-
 module.exports = class ClassInst{
     constructor(number){
         this.number = number;
