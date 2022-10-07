@@ -12,7 +12,7 @@ module.exports = class Calculator{
     }
 
     multi(){
-       return (this.num1) ** (this.num2)
+       return (this.num1) * (this.num2)
     }
 
     div(){
