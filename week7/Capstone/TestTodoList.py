@@ -48,8 +48,8 @@ from todoList import MyTodoList
 #     item.add(1)
 #     item.add({"Name": "Kelci"})
 #     item.add(True)
-#     assert item.removeSpecific({"Name": "Kelci"}) == ["Hello", 1, True]
-#
+#     assert item.removeSpecific(1) == ["Hello", {"Name": "Kelci"}, True]
+# #
 
 @pytest.fixture
 def item():
@@ -82,5 +82,7 @@ def testCanRemoveLastFromList(item):
 
 
 def testCanRemoveSpecificWordFromList(item):
-    assert item.removeSpecific({"Name": "Kelci"}) == ["Hello", 1, True]
+    #assert item.removeSpecific({"Name": "Kelci"}) == ["Hello", 1, True]
+   assert item.removeSpecific(1) == ["Hello", {"Name": "Kelci"}, True]
+
 
